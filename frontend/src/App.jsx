@@ -4,11 +4,14 @@ import Home from './pages/Home'
 import CreateProduct from './pages/CreateProduct'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import { useColorModeValue } from '@chakra-ui/react'
 
 function App() {
 
+  const bgColor = useColorModeValue('gray.100');
+
   return (
-    <Box minH={"100vh"} position={"relative"} pb={{ base: 24, md: 16}}>
+    <Box bg={bgColor} minH={"100vh"} position={"relative"} pb={{ base: 24, md: 16}}>
       <Navbar />
       <Box >
       <Routes>

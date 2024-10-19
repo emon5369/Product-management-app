@@ -11,7 +11,7 @@ import { useProductStore } from "../store/product";
 import { useState } from "react";
 
 function ProductCard({ product }) {
-    const bgColor = useColorModeValue("white", "gray.600");
+    const bgColor = useColorModeValue("yellow.100", "gray.600");
     const textColor = useColorModeValue("gray.600", "white");
 
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -43,7 +43,7 @@ function ProductCard({ product }) {
     }
 
     return (
-        <Box shadow={"lg"} p={2} rounded={"lg"} overflow={"hidden"} _hover={{ transform: "translateY(-5px) scale(1.02)", shadow: "xl" }} bg={bgColor} >
+        <Box shadow={"xl"} p={2} rounded={"lg"} overflow={"hidden"} _hover={{ transform: "translateY(-5px) scale(1.02)", shadow: "2xl" }} bg={bgColor} >
             <Image src={product.image} alt={product.name} h={48} w='full' objectFit='cover' />
 
             <Box p={3}>

@@ -1,8 +1,8 @@
-import { Box, Container, Stack, Text, Link, HStack, Icon, Divider, useColorModeValue } from '@chakra-ui/react';
+import { Box, Container, Stack, Text, Link, HStack, Icon, useColorModeValue } from '@chakra-ui/react';
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 function Footer() {
-    const bgColor = useColorModeValue('gray.100', 'gray.900');
+    const bgColor = useColorModeValue('gray.300', 'gray.900');
     const textColor = useColorModeValue('gray.700', 'gray.400');
 
     return (
@@ -26,7 +26,6 @@ function Footer() {
                         © {new Date().getFullYear()} UShop. All rights reserved.
                     </Text>
                 </Stack>
-                <Divider />
             </Container>
         </Box>
     );
