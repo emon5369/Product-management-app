@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import CreateProduct from './pages/CreateProduct'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import { useColorModeValue } from '@chakra-ui/react'
+import { useColorModeValue, Divider } from '@chakra-ui/react'
 
 function App() {
 
@@ -12,7 +12,10 @@ function App() {
 
   return (
     <Box bg={bgColor} minH={"100vh"} position={"relative"} pb={{ base: 24, md: 16}}>
+      <Box pb={{ base: 7, md: 1}}>
       <Navbar />
+      </Box>
+      <Divider />
       <Box >
       <Routes>
         <Route path="/" element={<Home /> } />

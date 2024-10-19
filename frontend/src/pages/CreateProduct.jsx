@@ -29,14 +29,14 @@ const CreateProduct = () => {
   }
 
   return (
-    <Container maxW="container.xl" pt={{ base: 36, md: 20}}>
+    <Container maxW="6xl" pt={{ base: 36, md: 44, lg: 20}}>
       <VStack spacing={8}>
         <Heading as={"h1"} size="2xl" color="teal.500" textAlign={"center"}
         fontFamily={"serif"}>
           Create Product
         </Heading>
 
-        <Box minW={{base: "90%", md:"30%"}} borderWidth="1px" borderRadius="lg" p={4}>
+        <Box minW={{base: "90%", md:"60%", lg:"35%"}} borderWidth="1px" borderRadius="lg" p={4}>
           <Stack spacing={4}>
             <InputGroup>
               <InputLeftElement pointerEvents='none'>

@@ -19,7 +19,6 @@ function Navbar() {
         }}
       >
         <Text
-        textAlign={"center"}
           fontSize={{ base: "2xl", md: "3xl" }}
           fontWeight={"bold"}
           bgGradient={"linear(to-r, blue.400, red.600)"}
@@ -28,13 +27,13 @@ function Navbar() {
           <Link to="/">UShop 🛒</Link>
         </Text>
 
-        <HStack spacing={3} alignItems={"center"} pt={2}>
+        <HStack spacing={3} alignItems={"center"}>
           <Link to="/create-product">
-            <Button>
+            <Button border={"1px solid gray"} borderRadius={"xl"}>
               <CiSquarePlus size={30} color="red" />
             </Button>
           </Link>
-          <Button onClick={toggleColorMode}>
+          <Button onClick={toggleColorMode} border={"1px solid gray"} borderRadius={"xl"}>
             {/* <Icon as={colorMode === "light" ? FiMoon : FiSun} boxSize={"7"} /> */}
             {colorMode === "light" ? <FiMoon size={25} color="blue" /> : <FiSun size={28} color="yellow" />}
           </Button>
